@@ -1,0 +1,46 @@
+body{
+    margin:0px;
+    padding:0px;
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+    height:100vh;
+    background:#a8d7cf;
+}
+.container{
+    background: white;
+    width:50%;
+    height:300px;
+    display:flex;
+    flex-direction: column; 
+    text-align: center;
+    align-items:center;
+    position:relative;
+    box-shadow: 15px 15px 10px gray;
+}
+.container h3{
+    font-size: 30px;
+    font-weight:400;
+    font-family: 'Original Surfer', cursive;
+}
+
+.joke{
+     position:absolute;
+     top:85px;
+     font-size:20px;
+     font-weight:400;
+     font-family: 'Original Surfer', cursive;
+}
+.btn{
+    width:100px;
+    height:50px;
+    border:none;
+    padding:8px;
+    position:absolute;
+    top:230px;
+    border-radius: 12px;
+    font-family: 'Original Surfer', cursive;
+    color:#344d4c;
+    cursor: pointer;
+    background:yellow;
+}

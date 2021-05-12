@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter Product"/>
+    <p id="product">HELLO</p>
+    <button type="button" onclick="Add">Click Me !</button>
+    <script>
+        var para = document.getElementById('product').innerHTML;
+        console.log(para);
+        var  Add =() =>{
+            var product = document.getElementById('product').innerHTML;
+            document.write(product);
+            console.log(product);  
+        }
+         
+    </script>
+</body>
+</html>

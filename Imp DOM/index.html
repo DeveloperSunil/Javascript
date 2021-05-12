@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="thapa">Thapa</p>
+    <p class="welcome">Technical</p>
+    <p class="welcome">Technical 1</p>
+    <p class="welcome">Technical 2</p>
+    <!--how to access element by ID-->
+    <script>
+        var  a = document.getElementById('thapa').innerHTML;
+        document.write(a);
+    </script>
+
+    <!--how to access element by Class-->
+    <script>
+        var b = document.getElementsByClassName('welcome')[0].innerHTML;
+        document.write(b);
+    </script>
+
+     <!--how to access element by tag name-->
+    <script>
+        var tag = document.getElementsByTagName("p");
+        document.write(tag);
+        console.log(tag);
+    </script>
+
+     <!--how to access element first  elements-->
+     <script>
+         var v = document.querySelector("p").innerHTML;
+         document.write(v);
+     </script>
+</body>
+</html>

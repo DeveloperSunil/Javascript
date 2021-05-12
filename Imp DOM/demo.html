@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="thapa">Thapa</p>
+    <p class="welcome">Technical</p>
+    <p class="welcome">Technical 1</p>
+    <p class="welcome">Technical 2</p>
+    <ul>
+        <li>like</li>
+        <li>subscribe</li>
+        <li>share</li>
+    </ul>
+    <!-- acess children of a body -->
+    <script>
+        var child = document.body.children;
+        console.log(child);
+    </script>
+
+    <!-- Add a new child in a body-->
+    <script>
+        var para = document.createElement("p");
+        var text = document.createTextNode("this is new paragrapgh.");
+        para.appendChild(text);
+        // document.write(para.innerHTML);
+        console.log(para);
+        document.body.appendChild(para);
+    </script>
+
+    <!--access firstchild and lastchild-->
+    <script>
+        // query selector give the first child
+         var list = document.querySelector("ul");
+         console.log(list);
+         console.log(list.firstChild);
+         console.log(list.lastChild);
+    </script>
+    
+    <!-- know the siblings-->
+    <script>
+        // here thapa is id
+        var sibling = thapa.nextElementSibling.nextElementSibling;
+        console.log(sibling);
+    </script>
+
+    <!-- know the parent-->
+    <script>
+        // know the parent of ul 
+        var list = document.querySelector("ul");
+        console.log(list.parentNode);
+    </script>
+
+</body>
+</html>

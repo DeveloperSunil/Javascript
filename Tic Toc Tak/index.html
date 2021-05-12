@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./tic-tac-toe.css">
+    <script src="./tic-tac-toe.js"></script>
+</head> 
+<body>
+    <h1 class="heading">Lets Play Tic Tak Toe!</h1>
+    <h3 class="winner-display">Naveen is the Winner</h3>
+    <h4 class="turn-display">Naven its your turn!</h4>
+    <div class="play-area">
+        <div id="div1" class="play-cells" onclick=fill(this)></div>
+        <div id="div2" class="play-cells" onclick=fill(this)></div>
+        <div id="div3" class="play-cells" onclick=fill(this)></div>
+        <div id="div4" class="play-cells" onclick=fill(this)></div>
+        <div id="div5" class="play-cells" onclick=fill(this)></div>
+        <div id="div6" class="play-cells" onclick=fill(this)></div>
+        <div id="div7" class="play-cells" onclick=fill(this)></div>
+        <div id="div8" class="play-cells" onclick=fill(this)></div>
+        <div id="div9" class="play-cells" onclick=fill(this)></div>
+    </div>
+    <div class="action-container">
+        <input type="text" class="player-1" placeholder="Player-1" value=""/>
+        <button type="button" class="refresh-button scale-animate">Refresh</button>
+        <input type="text" class="player-2" placeholder="Player-2" value=""/>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="./calculator.css">
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;700&display=swap" rel="stylesheet">
+    <script src="./calculator.js"></script>
+    <script src="./CalculatorClass.js"></script>
+</head>
+<body>
+    <div class="calc-container">
+            <div class="display">
+                <div class="switch-container">
+                    <div class="switch">
+                        <i class="fas fa-sun fa-lg color icon-size not-selected" ></i>
+                        <i class="far fa-moon fa-lg color icon-size"></i>
+                    </div>
+                </div>
+                <div class="output">
+                        <label id="" class="operation">100<span class="operand">x</span>42</label>
+                        <label class="result">0</label>
+                </div>
+                
+            </div>
+
+            <div class="keypad-container">
+                    <table class="keypad">
+                        <tbody>
+                            <tr>
+                                <td><div class="key action-key">AC</div></td>
+                                <td><div class="key action-key">+/-</div></td>
+                                <td><div class="key action-key">%</div></td>
+                                <td><div class="key operand">÷</div></td>
+                            </tr>
+
+                            <tr>
+                                <td><div class="key num-key" onclick="numClickHandler(7)">7</div></td>
+                                <td><div class="key num-key" onclick="numClickHandler(8)">8</div></td>
+                                <td><div class="key num-key" onclick="numClickHandler(9)">9</div></td>
+                                <td><div class="key operand" onclick="operandKeyClickHandler('MULTIPLAY')">x</div></td>
+                            </tr>
+
+                            <tr>
+                                <td><div class="key num-key" onclick="numClickHandler(4)">4</div></td>
+                                <td><div class="key num-key" onclick="numClickHandler(5)">5</div></td>
+                                <td><div class="key num-key" onclick="numClickHandler(6)">6</div></td>
+                                <td><div class="key operand" onclick="operandKeyClickHandler('SUBTRACT')">-</div></td>
+                            </tr>
+
+                            <tr>
+                                <td><div class="key num-key" onclick="numClickHandler(1)">1</div></td>
+                                <td><div class="key num-key" onclick="numClickHandler(2)">2</div></td>
+                                <td><div class="key num-key" onclick="numClickHandler(3)">3</div></td>
+                                <td><div class="key operand" onclick="operandKeyClickHandler('ADD')">+</div></td>
+                            </tr>
+
+                            <tr>
+                                <td><div class="key num-key" onclick="numClickHandler(7)"><i class="fas fa-redo-alt flip-180"></i></div></td>
+                                <td><div class="key num-key" onclick="numClickHandler(7)">0</div></td>
+                                <td><div class="key num-key" onclick="numClickHandler(7)">.</div></td>
+                                <td><div class="key operand" onclick="numClickHandler('')">=</div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="product" placeholder="Enter product "/>
+    <input type ="number" class="price" placeholder="Enter Price"/>
+    <button type="button" onclick="myFunction()">Add</button>
+     <table id="myTable">
+         <tr>
+             <th>sno.</th> 
+             <th>product</th>
+             <th>price</th>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>sunil</td>
+            <td>100</td>
+        </tr>
+     </table>
+     
+     <script>
+         function myFunction(){
+            // var product = document.getElementById("product").innerHTML;
+           // console.log(product);
+            var price = document.getElementsByClassName("price")[0].innerHTML;
+            console.log(price);
+            //var table = document.getElementById("myTable");
+            // var row = table.insertRow(0);
+            // var cell1 = row.insertCell(0);
+            // var cell2 = row.insertCell(1);
+            // cell1.innerHTML = product;
+            // cell2.innerHTML = price;
+         }
+         
+     </script>
+</body>
+</html>

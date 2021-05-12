@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+         .bulb{
+             width:20%;
+             margin:auto;
+         }
+     </style>
+</head>
+<body>
+    <div class="bulb">
+        <img id="myimage" onmousedown="lighton()" onmouseup="lightoff()" src="bulbof.gif" width="100" height="180" />  
+    </div>
+    
+    <script>
+        function lighton(){
+            document.getElementById("myimage").src='bulbon.gif';
+        }
+        function lightoff(){
+            document.getElementById("myimage").src='bulbof.gif';
+        }
+    </script>
+</body>
+</html>
